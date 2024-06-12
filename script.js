@@ -85,11 +85,8 @@ function resetGame() {
     board = ['', '', '', '', '', '', '', '', ''];
     currentPlayer = 'X';
     partidasJogadas++;
-    statusDiv.textContent = 'Procurando outro jogador...';
-    setTimeout(() => {
-        statusDiv.textContent = '';
-        initializeBoard();
-    }, 1000); // Reduzimos o tempo de espera para 1 segundo
+    statusDiv.textContent = '';
+    initializeBoard();
 }
 
 function updateSaldo() {
