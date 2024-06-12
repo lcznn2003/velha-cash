@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Velha</h1>
+        <div id="board" class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <p id="message">Procurando Oponente...</p>
+        <p id="balance">Saldo: R$0</p>
+        <button id="withdraw">Saque</button>
+        <div id="withdraw-panel" class="withdraw-panel hidden">
+            <p>Escolha a chave Pix:</p>
+            <button class="pix-option" data-type="telefone">Telefone</button>
+            <button class="pix-option" data-type="cpf">CPF</button>
+            <input type="text" id="pix-key" placeholder="Insira a chave Pix">
+            <button id="confirm-withdraw">Confirmar Saque</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
