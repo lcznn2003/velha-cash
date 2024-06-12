@@ -89,7 +89,7 @@ function resetGame() {
     setTimeout(() => {
         statusDiv.textContent = '';
         initializeBoard();
-    }, 2000);
+    }, 1000); // Reduzimos o tempo de espera para 1 segundo
 }
 
 function updateSaldo() {
